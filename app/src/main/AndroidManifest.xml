@@ -13,11 +13,6 @@
         android:theme="@style/Theme.HikingApplication">
 
 
-        <!-- Confirm screen -->
-        <activity
-            android:name=".ConfirmActivity"
-            android:exported="false" />
-
         <!-- List of hikes -->
         <activity
             android:name=".ListActivity"
