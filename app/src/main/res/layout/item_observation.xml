@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:elevation="4dp"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Observation Title -->
+        <TextView
+            android:id="@+id/observationTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Observation Title"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+        <!-- Timestamp -->
+        <TextView
+            android:id="@+id/observationDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="2025-11-21 23:42:46"
+            android:textSize="14sp"
+            android:textColor="#555555" />
+
+        <!-- Comments -->
+        <TextView
+            android:id="@+id/observationNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Comment goes here"
+            android:textSize="15sp" />
+
+        <!-- Buttons Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/btnEditObservation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/btnDeleteObservation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

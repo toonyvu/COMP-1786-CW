@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MHike</string>
+    <string-array name="difficulties">
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+        <item>Extreme</item>
+    </string-array>
+
+    <string-array name="search_fields">
+        <item>Name</item>
+        <item>Location</item>
+        <item>Date</item>
+        <item>Length</item>
+    </string-array>
+</resources>
