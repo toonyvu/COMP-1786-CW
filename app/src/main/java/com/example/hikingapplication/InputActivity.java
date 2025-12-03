@@ -23,6 +23,7 @@ public class InputActivity extends AppCompatActivity {
 
         //DEFINING ALL FIELDS PRESENT IN THE LAYOUT
         Button submit = findViewById(R.id.btnSubmit);
+        Button back = findViewById(R.id.btnBack);
         EditText name = (EditText) findViewById(R.id.hikeEdit);
         EditText location = (EditText) findViewById(R.id.locationEdit);
         EditText date = (EditText) findViewById(R.id.dateEdit);
@@ -62,6 +63,11 @@ public class InputActivity extends AppCompatActivity {
             datePicker.show();
         });
 
+        back.setOnClickListener(v -> {
+            Intent i = new Intent(InputActivity.this, ListActivity.class);
+            startActivity(i);
+            finish();  // optional, prevents returning to InputActivity
+        });
 
         // WHEN SUBMIT IS CLICKED, TAKE THE VALUES FROM TEXT FIELDS, VALIDATE (FOR REQUIRED FIELDS)
         // AND INSERT INTO DATABASE. IF SUCCESSFUL, GO TO LIST ACTIVITY.
