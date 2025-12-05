@@ -1,0 +1,2 @@
+LINK TO LOGBOOK PROJECTS:
+LOGBOOK 1: https://github.com/toonyvu/COMP-1786-LOGBOOK1.git
